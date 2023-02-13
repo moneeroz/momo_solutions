@@ -2,6 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Signika+Negative:wght@400;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* body style */
+:root {
+  --body-bg: rgb(35, 35, 35);
+}
+
+html {
+  color-scheme: dark light;
+}
+
 body {
   font-family:'play', sans-serif ;
+  font-size: 1.25rem;
+  background: var(--body-bg);
+  color: rgb(255, 255, 255);
+}
+
+section {
+  padding-block: 5rem;
+}
+
+/* section style */
+.triangle {
+  --triangle-width: 100px;
+  --triangle-height: 20px;
+  --triangle-color: var(--body-bg);
+
+  position: relative;
+  color: black;
+  background: linear-gradient(to right, rgb(90, 242, 224), rgb(117, 178, 247)) ;
+  margin-bottom: 0;
+}
+
+.triangle::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: var(--triangle-height);
+  background: var(--triangle-color);
+  -webkit-mask-image: url('../img/triangle.svg');
+  -webkit-mask-size: var(--triangle-width) var(--triangle-height);
+
+  mask-image: url('../img/triangle.svg');
+  mask-size: var(--triangle-width) var(--triangle-height);
+}
+
+.triangle::before {
+  top: 0;
 }

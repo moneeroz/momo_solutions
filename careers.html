@@ -58,14 +58,18 @@
       </div>
     </nav>
 
-    <!-- Header -->
-    <div class="container mb-5 text-center">
-      <img src="img/logo.webp" class="img-fluid" alt="company logo" />
-    </div>
+    <section>
+      <!-- Header -->
+      <div class="container mb-5 text-center">
+        <img src="img/logo.webp" class="img-fluid" alt="company logo" />
+      </div>
+    </section>
 
     <!-- form -->
 
-    <div class="container w-75">
+    <section class="triangle">
+
+      <div class="container w-75">
       <div class="container col-12 col-md-10">
         <div class="container my-5 pt-5 text-center">
           <h1>Become a <span class="text-info-emphasis">legend</span></h1>
@@ -75,16 +79,16 @@
           <div class="row mb-3">
             <label for="inputName" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputName" />
+              <input type="text" class="form-control" id="inputName" required/>
             </div>
           </div>
 
           <div class="row mb-3">
-            <label for="inputExperience" class="col-sm-2 col-form-label"
-              >Experience</label
+            <label for="inputXp" class="col-sm-2 col-form-label"
+              >Xp </label
             >
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputExperience" />
+              <input type="text" class="form-control" id="inputXp" required/>
             </div>
           </div>
 
@@ -93,17 +97,17 @@
               >Email</label
             >
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail" />
+              <input type="email" class="form-control" id="inputEmail" required/>
             </div>
           </div>
 
           <div class="row mb-3">
-            <label for="Vacancies" class="col-sm-2 col-form-label"
-              >Vacancies</label
+            <label for="interest" class="col-sm-2 col-form-label"
+              >Interest</label
             >
             <div class="col-sm-10">
               <label class="visually-hidden">Preference</label>
-              <select class="form-select">
+              <select class="form-select" required>
                 <option selected></option>
                 <option value="1">Full Stack Web Developer</option>
                 <option value="2">IOS / Android Developer</option>
@@ -114,10 +118,10 @@
           </div>
 
           <div class="row mb-3">
-            <label for="Vacancies" class="col-sm-2 col-form-label">Tybe</label>
+            <label for="interest" class="col-sm-2 col-form-label">Tybe</label>
             <div class="col-sm-10">
               <label class="visually-hidden">Preference</label>
-              <select class="form-select">
+              <select class="form-select" required>
                 <option selected></option>
                 <option value="1">Full-time</option>
                 <option value="2">Part-time</option>
@@ -127,12 +131,14 @@
             </div>
           </div>
 
-          <div class="container text-center mx-sm-5 ps-5 my-4">
+          <div class="container text-center mx-sm-5 my-4">
             <button type="submit" class="btn btn-primary w-50">Submit</button>
           </div>
         </form>
       </div>
     </div>
+
+    </section>
 
     <!-- Footer -->
     <footer class="p-4 bg-dark text-center text-white position-relative">
